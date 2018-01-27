@@ -78,7 +78,7 @@ sumatensiune = sumatensiune/20.;
 
   tensiune=(float)(99.66+.467)/.467*1*sumatensiune/1023-.72;
 
- current=(float)1/0.22*sumacurent/1023;
+ current=(float)1.1/0.02*sumacurent/1023;
  
  
   lcd.setCursor(0, 0);
