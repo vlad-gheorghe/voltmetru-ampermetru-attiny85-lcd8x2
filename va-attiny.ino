@@ -21,11 +21,11 @@ for made a dual thermometer & battery status for car with ATtiny85 as Arduino..
  */
 
 #include <LiquidCrystal595.h>    // include the library
-LiquidCrystal595 lcd(0,1,2);     // datapin, latchpin, clockpin
+LiquidCrystal595 lcd(0,1,2);     // datapin, latchpin, clockpin pb0, pb1, pb2
 
 
-#define VT_PIN A3 
-#define AT_PIN A2
+#define VT_PIN A3 //pin2 pb3
+#define AT_PIN A2 //pin3 pb4
 unsigned long tpmasurare;  // variabila pentru memorare timp masurare (in ms)
 float sumatensiune = 0.;   // valoare insumare tensiune pentru calcul medie
 float sumacurent = 0.; // valoare insumare curent pentru calcul medie
